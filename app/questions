@@ -1,0 +1,48 @@
+
+1) Explain REST and RESTful
+
+REST means Representational State Transfer. It’s an architectural pattern for creating web services. 
+A RESTful service is one that implements that pattern.
+
+2) Explain the architectural style for the creation of a web API (client server communication, formatting language, etc.)
+
+For the creation of a web API, the HTTP protocol or HTTPS (the secure version of HTTP) is used. The protocol consists of 
+sending a client request to the server. The request consists of a header and a body.
+The header is composed of an HTTP verb (GET, POST, PUT, etc.) that indicates the action of the request.
+To access certain data it is necessary to authenticate with a valid authentication header.
+
+Server responses are possible in different formats such as xml, yaml or json. The server can return several types of return codes.
+The 2xx codes correspond to a valid request. The 4xx codes correspond to an error in the client request and the 5xx codes correspond 
+to an error at the server level.
+
+3) Explain HTTP requests types when used with RESTful web (GET, PUT, POST, etc.)
+
+GET: To retrieve a resource from the server.
+PUT: To change the state of a resource or to update it. 
+POST: To create a resource on the server.
+PATCH: To update the state of a resource from the server.
+DELETE: To remove or delete a resource from the server.
+
+4) Explain the difference between stateless and stateful protocol. Which type of protocol is HTTP ?
+
+The stateless protocol does not require the server to retain server information or session details, unlike the stateful protocol.
+In stateless protocols there is a close dependency between the server and the client.
+Stateful protocol design makes the server implementation very complex and complicated, while stateless protocol design simplifies it.
+Contrary to stateful, stateless protocols work better at the time of a crash because no state needs to be restored, a failed server can simply restart.
+Stateless protocols handle the transaction very quickly and stateless protocols handle the transaction very slowly.
+So stateless protocols are easy to implement on the Internet and stateless protocols are logically more cumbersome to implement on the Internet.
+
+HTTP is stateless protocol.
+
+5) Explain the difference between a GET and a POST (like how are sent the parameters)
+
+In case of a POST request, a large amount of data can be sent because the data is sent in the body. While a GET request, 
+only a limited amount of data can be sent because the data is sent in the header. 
+The POST request is most secure than GET request because the data is not exposed in the URL bar.
+The GET request is more efficient and used more than POST.
+Data from a GET request can be cached in the browser.
+
+6) You can’t work out how to solve a coding problem. What do you do to find the answer?
+
+If I can't find the answer to a problem, I first look on the Internet if someone has already solved it or a similar problem. 
+Then if I still haven't found it I will ask my colleagues at work, if they have a different idea and/or a different vision to bring to me about the problem.
